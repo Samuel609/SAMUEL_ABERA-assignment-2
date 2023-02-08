@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'steak.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +28,7 @@ class _RootPageState extends State<RootPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xf131929),
+      backgroundColor: const Color.fromARGB(15, 222, 21, 92),
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Image.asset(
@@ -123,7 +122,7 @@ class _RootPageState extends State<RootPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   const SizedBox(
-                    width: 70,
+                    width: 50,
                   ),
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -137,6 +136,10 @@ class _RootPageState extends State<RootPage> {
                       fit: BoxFit.cover,
                     )),
                   ),
+                  const Text(
+                    'people',
+                    style: TextStyle(color: Colors.white),
+                  ),
                   const SizedBox(
                     width: 40,
                   ),
@@ -148,7 +151,7 @@ class _RootPageState extends State<RootPage> {
                     padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                      image: AssetImage('assets/images/stt.jpg'),
+                      image: AssetImage('assets/images/stps.jpg'),
                       fit: BoxFit.cover,
                     )),
                   ),
@@ -163,7 +166,7 @@ class _RootPageState extends State<RootPage> {
                     padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                      image: AssetImage('assets/images/DDJ.jpg'),
+                      image: AssetImage('assets/images/nap.jpg'),
                       fit: BoxFit.cover,
                     )),
                   ),
@@ -178,7 +181,7 @@ class _RootPageState extends State<RootPage> {
                     padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                      image: AssetImage('assets/images/DDJ.jpg'),
+                      image: AssetImage('assets/images/jj.jpg'),
                       fit: BoxFit.cover,
                     )),
                   ),
@@ -193,7 +196,7 @@ class _RootPageState extends State<RootPage> {
                     padding: const EdgeInsets.fromLTRB(0, 0, 10, 0),
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                      image: AssetImage('assets/images/DDJ.jpg'),
+                      image: AssetImage('assets/images/kt.jpg'),
                       fit: BoxFit.cover,
                     )),
                   ),
@@ -201,7 +204,23 @@ class _RootPageState extends State<RootPage> {
           )
         ],
       ),
-      
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black54,
+        unselectedItemColor: Colors.white,
+        selectedItemColor: const Color.fromARGB(255, 239, 94, 3),
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'search',
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite_border_rounded), label: ('favorite'))
+        ],
+      ),
     );
   }
 }

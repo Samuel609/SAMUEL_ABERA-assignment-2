@@ -45,7 +45,7 @@ class _RootPageState extends State<RootPage> {
             child: const Text(
               "Welcome to the steak house",
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 34,
                 fontFamily: 'Inkfree',
                 color: Colors.orange,
               ),
@@ -64,7 +64,10 @@ class _RootPageState extends State<RootPage> {
                     ),
                     const Text(
                       'catagories',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(
+                          color: Colors.orange,
+                          fontFamily: 'Inkfree',
+                          fontSize: 20),
                     ),
                   ],
                 ),
@@ -78,7 +81,10 @@ class _RootPageState extends State<RootPage> {
                   ),
                   const Text(
                     'about us',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(
+                        color: Colors.orange,
+                        fontFamily: 'Inkfree',
+                        fontSize: 20),
                   )
                 ]),
               ),
@@ -92,7 +98,10 @@ class _RootPageState extends State<RootPage> {
                     ),
                     const Text(
                       'cart',
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(
+                          color: Colors.orange,
+                          fontFamily: 'Inkfree',
+                          fontSize: 20),
                     )
                   ],
                 ),
@@ -122,7 +131,7 @@ class _RootPageState extends State<RootPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   const SizedBox(
-                    width: 50,
+                    width: 35,
                   ),
                   Container(
                     constraints: const BoxConstraints.expand(
@@ -135,10 +144,6 @@ class _RootPageState extends State<RootPage> {
                       image: AssetImage('assets/images/hhp.jpg'),
                       fit: BoxFit.cover,
                     )),
-                  ),
-                  const Text(
-                    'people',
-                    style: TextStyle(color: Colors.white),
                   ),
                   const SizedBox(
                     width: 40,
